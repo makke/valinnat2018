@@ -1,0 +1,114 @@
+/* ********************* */
+/* A LIGHT CSS NORMALIZE */
+
+html {
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+/* ******* */
+/* GRID LAYOUT CSS */
+
+body {
+  font-family: 'Libre Baskerville', serif;
+  background-color: #fff;
+  color: #444;
+}
+
+h1, p {
+  margin: 0 0 1em 0;
+}
+
+.wrapper {
+  max-width: 95%;
+  margin: 0 20px;
+  display: grid;
+  grid-gap: 10px;
+}
+
+/* Add some responsiveness even if I won't probably use it */
+@media screen and (min-width: 500px) {
+
+  .wrapper {
+    margin: 0 auto;
+    grid-template-columns: 1fr 3fr;
+  }
+
+  .header, .footer {
+    grid-column: 1 / -1;
+  }
+
+}
+
+.wrapper > * {
+  border: 2px solid #444;
+  background-color: white;
+  color: black;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+
+/* ADDITIONAL LAYOUT */
+.wrapper2 {
+  display: grid;
+  /* grid-template-columns: 100px 162px 262px; */
+  grid-template-columns: 1fr 1.618fr 2.618fr;
+  grid-column-gap: 0px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.box1 {
+  background-color: yellow;
+}
+
+.box2 {
+  background-color: orange;
+}
+
+.box3 {
+  background-color: red;
+}
+
+
+/* ************************************************* */
+/* ADD SOME EXTRA CSS TRICKS, TO TEST THE APPLICANTS */
+
+.header, h1 {
+  font-family: 'Mr De Haviland', cursive;
+  letter-spacing: 5px;
+  font-size: 200%;
+  text-decoration: underline;
+  font-weight: normal;
+}
+
+.header {
+  color: #ff5a00;
+  background-color: #eee;
+}
+
+.sidebar {
+  transform: rotate(-10deg);
+}
+
+.shadow {
+  /* text shadow */
+  text-shadow: 3px 3px #ff0000;
+  font-size:30px;
+}
+
+blockquote {
+  font-style: italic;
+  padding-left: 8px;
+  border-left: 2px solid #ff5a00;
+}
+
+.normal {
+  font-style:normal;
+}
+
+.footer {
+  text-align: right;
+  background-color: #eee;
+}
